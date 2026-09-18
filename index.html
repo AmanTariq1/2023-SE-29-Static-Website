@@ -3,18 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Website - 2023-SE-29</title>
+    <title>Aman Tariq | Cloud Computing Lab Task 04</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Website</h1>
-        <p>Hello! My name is <strong>Aman Tariq</strong>.</p>
-        <p>Roll No: <strong>2023-SE-29</strong></p>
-        <p>This website is deployed for Cloud Computing Lab Task 04.</p>
-        <button onclick="showMessage()">Click Me</button>
-        <p id="message"></p>
+    <!-- Animated Background Bubbles -->
+    <div class="bubbles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="avatar">
+                <span>AT</span>
+            </div>
+
+            <h1 class="title">Welcome to My Website</h1>
+            <p class="subtitle">Cloud Computing Lab Task 04</p>
+
+            <div class="info">
+                <div class="info-item">
+                    <span class="label">Name</span>
+                    <span class="value">Aman Tariq</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Roll No</span>
+                    <span class="value">2023-SE-29</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Subject</span>
+                    <span class="value">Cloud Computing (SE-3202)</span>
+                </div>
+            </div>
+
+            <p class="description">
+                This website is deployed on <strong>Netlify</strong> using 
+                <strong>GitHub</strong> continuous deployment.
+            </p>
+
+            <button class="btn" onclick="showMessage()">
+                <span>✨ Click Me</span>
+            </button>
+            <p id="message" class="message"></p>
+
+            <div class="footer">
+                <span>Powered by Netlify</span>
+            </div>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
